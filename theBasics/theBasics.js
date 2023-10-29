@@ -1,3 +1,5 @@
+  //  ***********************************************************************Exercises*******************************************************************************
+
 /*1. Concatenate two or more strings, one with your first name and one with your last, to create a string with your full name as its value. For example, if your name 
 is John Doe, think about how you can put 'John' and 'Doe' together to get 'John Doe'.*/
 console.log("Nicholas" + " " + "Herrera");
@@ -105,4 +107,4 @@ let pets = {
     '12' < '9' */
 
 /* The above line of code evaluates to true. The operand first compares the first element of the string '12' to '9' and then accepts the character in front of it
-as being less than '9' */
+as being less than '9'. */
