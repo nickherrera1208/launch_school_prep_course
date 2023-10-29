@@ -8,8 +8,9 @@
    In 20 years, you will be 40 years old.
    In 30 years, you will be 50 years old.
    In 40 years, you will be 60 years old. */
-
-let someones_age = 33;
+let rlSync = require('readline-sync');
+let someones_age = Number(rlSync.question('How old are you? '));
+// let someones_age = 33;
 console.log(`Your are ${someones_age} years old.`);
 console.log(`In 10 years, you will be ${someones_age + 10} years old.`);
 console.log(`In 20 years, you will be ${someones_age + 20} years old.`);
