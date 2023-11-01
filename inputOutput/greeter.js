@@ -17,10 +17,34 @@
    What is your last name? Roberts 
    Hello, Sue Roberts! */
 
-   let rlSync = require('readline-sync');
-   let first_name = rlSync.question("What is your first name? ");
-   let last_name = rlSync.question("What is your last name? ");
-   console.log(`Hello, ${first_name} ${last_name}!`);
+  //  let rlSync = require('readline-sync');
+  //  let first_name = rlSync.question("What is your first name? ");
+  //  let last_name = rlSync.question("What is your last name? ");
+  //  console.log(`Hello, ${first_name} ${last_name}!`);
+
+  /* My version 
+  let rlSync = require('readline-sync');
+  function first_name(){
+    let firstName = rlSync.question("What is your first name? ");
+    return firstName;
+  }
+  function last_name(){
+    let last_name = rlSync.question("What is your last name? ");
+    return console.log(`Hello, ${first_name()} ${last_name}`);
+  } 
+
+  last_name(); */
+  
+  /* LS Version
+  function getName(prompt) {
+    let readlineSync = require('readline-sync');
+    let name = readlineSync.question(prompt);
+    return name;
+  }
+  
+  let firstName = getName('What is your first name? ');
+  let lastName = getName('What is your last name? ');
+  console.log(`Hello, ${firstName} ${lastName}!`); */
 
 /* 3. Modify the age.js program you wrote in the exercises for the Variables chapter. The updated code should ask the user to enter their age instead  of hard-coding
    the age in the program. Here's and example run:
