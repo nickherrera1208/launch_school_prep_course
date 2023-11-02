@@ -114,3 +114,13 @@
 
 /* 10. Using the code from Exercise 9, classify each variable name as either global or local. For our purposes here, you may assume that the code from Exercise 9 
        is the entire program. 
+
+       LS Answers
+
+       Global Variables: multiply, getNumber, left, right, console, parseFloat, question.
+       Local Variables: left, right, product, prompt */
+
+/* 11. Using the code from Exercise 9, are the left and right variables on lines 1 and 2 the same as the left and right variables on lines 10-12? Explain your
+       reasoning. 
+
+       They are not. The variables on lines 1 and 2 are local and the others on 10-12 are global. */
