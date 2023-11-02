@@ -84,3 +84,33 @@
       foo('Hello'); */
 
 /* The output be 'Hello' and then undefined since the qux variable didn't get initialized with a value.  */
+
+/* 8. Without running the following code, what do you think it will output? 
+
+      function foo(bar, qux) {
+        console.log(bar);
+        console.log(qux);
+      }
+
+      foo(42, 3.1415, 2.718);     */
+
+//  The code above will output the first two numbers but not the third. 
+
+/* 9. Identify all of the variables named on each line of the following code. You may assume that "question" is the name of a built-in function in javascript 
+      (it is not, so this code won't work as written). 
+
+      function multiply(left, right) {                                  <--- multiply: global, left: local, right: local
+        let product = left * right;                                     <--- product: local, left: local, right: local
+        return product;                                                 <--- product: local
+      }
+
+      function getNumber(prompt) {                                      <--- getNumber: global, prompt: local
+        return parseFloat(question(prompt));                            <--- question: local, prompt: local, parseFloat: local
+      }
+
+      let left = getNumber('Enter the first number: ');                 <--- left: global, getNumber: local
+      let right = getNumber('Enter the second number: ');               <--- right: global, getNumber: local 
+      console.log(`${left} * ${right} = ${multiply(left, right)}`);     <--- left: local, right: local, multiply: local, console: global */
+
+/* 10. Using the code from Exercise 9, classify each variable name as either global or local. For our purposes here, you may assume that the code from Exercise 9 
+       is the entire program. 
