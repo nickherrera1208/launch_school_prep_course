@@ -9,13 +9,29 @@
    In 30 years, you will be 50 years old.
    In 40 years, you will be 60 years old. */
 let rlSync = require('readline-sync');
-let someones_age = Number(rlSync.question('How old are you? '));
+// let someones_age = Number(rlSync.question('How old are you? '));
 // let someones_age = 33;
-console.log(`Your are ${someones_age} years old.`);
-console.log(`In 10 years, you will be ${someones_age + 10} years old.`);
-console.log(`In 20 years, you will be ${someones_age + 20} years old.`);
-console.log(`In 30 years, you will be ${someones_age + 30} years old.`);
-console.log(`In 40 years, you will be ${someones_age + 40} years old.`);
+// console.log(`Your are ${someones_age} years old.`);
+// console.log(`In 10 years, you will be ${someones_age + 10} years old.`);
+// console.log(`In 20 years, you will be ${someones_age + 20} years old.`);
+// console.log(`In 30 years, you will be ${someones_age + 30} years old.`);
+// console.log(`In 40 years, you will be ${someones_age + 40} years old.`);
+// New Code Block -- uncomment let vars to run code above
+/* My version 
+let ages = [10, 20, 30, 40];
+let someones_age = Number(rlSync.question('How old are you? '));
+for (let i =0; i < ages.length; i++){
+  console.log(`In ${ages[i]} years, you will be ${someones_age + ages[i]} years old.`);
+} */
+
+/* LS Version
+let readlineSync = require('readline-sync');
+let age = readlineSync.question('How old are you? ');
+age = parseInt(age);
+console.log(`You are ${age} years old.`);
+for (let future = 10; future <= 40; future += 10) {
+  console.log(`In ${future} years, you will be ${age + future} years old.`);
+} */ 
 
 /* 3. What happens when you run the following program? Why do we ge that result? 
 
