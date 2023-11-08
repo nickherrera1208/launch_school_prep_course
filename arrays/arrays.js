@@ -93,13 +93,40 @@
 
       console.log(sumOfSquares(array)); */
 
-/* This problem is more challenging than most in this book. Don't worry if you can't solve it on your own. Write a function similar to the oddLengths function from 
+/* 8. This problem is more challenging than most in this book. Don't worry if you can't solve it on your own. Write a function similar to the oddLengths function from 
    Exercise 6, but don't use map or filter. Instead, try to use the reduce method. */
 
-      //  let arr = ['a', 'abcd', 'abcde', 'abc', 'ab'];
+   /* LS Answer
+       function oddLengths(strings) {
+        return strings.reduce((filteredNumbersArray, letters) => {
+          let length = letters.length;
+          if (length % 2 === 1) {
+            filteredNumbersArray.push(length);
+          }
+      
+          return filteredNumbersArray;
+        }, []);
+      }
+      
+      let arr = ['a', 'abcd', 'abcde', 'abc', 'ab'];
+      console.log(oddLengths(arr)); */
 
-      // function oddLengths(arg){
-      //    return arg.reduce((accumulator, i) => )
-      // }
+/* 9. Without using a for, while, or do/while loop, write some code that checks whether the number 3 appears inside these arrays: */
 
-      // console.log(oddLengths(arr));
+     /* let numbers1 = [1, 3, 5, 7, 9, 11];
+      let numbers2 = [];
+      let numbers3 = [2, 4, 6, 8];
+
+      console.log(numbers1.includes(3));
+      console.log(numbers2.includes(3));
+      console.log(numbers3.includes(3)); */
+
+/* 10. Write some code to replace the value 6 in the following array with 606: */
+
+   /* let arr = [
+     ["hello", "world"],
+     ["example", "mem", null, 6, 88],
+     [4, 8, 12]
+   ];
+
+   arr[1][3] = 606; */
