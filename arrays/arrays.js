@@ -51,8 +51,55 @@
       element in the original array. If the element is an even value, then the corresponding element in the new array should contain the string 'even'; otherwise, 
       the element in the new array should contain 'odd'. */
     
-      let myArray = [
+      /* let myArray = [
         1, 3, 6, 11,
         4, 2, 4, 9,
         17, 16, 0,
       ];
+
+      let newArray = myArray.map(i => i % 2 === 0 ? 'even' : 'odd');
+
+      console.log(newArray); */
+
+/* 5. Write a findIntegers function that takes an array argument and returns an array that contains only the integers from the input array. Use the filter method 
+      in your function. */
+
+      /* let lst = ['thing', 'this', 'that', 4, 5, 6, 'end'];
+
+      function findIntegers(arg){
+        return arg.filter(i => Number.isInteger(i));
+      }
+
+      console.log(findIntegers(lst)); */
+
+/* 6. Use map and filter to first determine the lengths of all the elements in an array of string values, then discard the even values (keep the odd values). */
+
+      /* let arr = ['a', 'abcd', 'abcde', 'abc', 'ab'];
+
+      function oddLengths(arg){
+        let mapped = arg.map(i => i.length % 2 === 0 ? true : i.length);
+        return mapped.filter(i => Number.isInteger(i));
+      }
+
+      console.log(oddLengths(arr)); */
+
+/* 7. Use reduce to compute the sum of the squares of all of the numbers in an array: */
+
+      /* let array = [3, 5, 7];
+
+      function sumOfSquares(arg){
+        return array.reduce((accumulator, element) => accumulator + (element ** 2), 0);
+      }
+
+      console.log(sumOfSquares(array)); */
+
+/* This problem is more challenging than most in this book. Don't worry if you can't solve it on your own. Write a function similar to the oddLengths function from 
+   Exercise 6, but don't use map or filter. Instead, try to use the reduce method. */
+
+      //  let arr = ['a', 'abcd', 'abcde', 'abc', 'ab'];
+
+      // function oddLengths(arg){
+      //    return arg.reduce((accumulator, i) => )
+      // }
+
+      // console.log(oddLengths(arr));
